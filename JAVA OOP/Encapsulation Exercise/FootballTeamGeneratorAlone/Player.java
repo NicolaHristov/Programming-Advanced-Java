@@ -70,7 +70,7 @@ public class Player {
     public double overallSkillLevel(){
         return (endurance+sprint+dribble+passing+shooting) / 5.0;
     }
-    public void getStats(int stats,String name){
+    private void getStats(int stats,String name){
         if(stats<0 || stats>100){
             throw new IllegalArgumentException(name+" should be between 0 and 100.");
         }
