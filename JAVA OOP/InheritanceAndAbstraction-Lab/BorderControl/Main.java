@@ -25,6 +25,7 @@ public class Main {
                String model=infoCommand[0];
                String id=infoCommand[1];
                Robot robot=new Robot(id,model);
+               robotList.add(robot);
            }
 
             command=scanner.nextLine();
@@ -36,7 +37,7 @@ public class Main {
         List<Citizen>printCitizen=new ArrayList<>();
 
         for (Citizen citizen : citizenList) {
-            if(citizen.getId().contains(fakeNumberOfIds)){
+            if(citizen.getId().endsWith(fakeNumberOfIds)){
                 printCitizen.add(citizen);
             }
         }
@@ -48,7 +49,7 @@ public class Main {
         }
 
         for (Robot robot : robotList) {
-            if(robot.getId().contains(fakeNumberOfIds)){
+            if(robot.getId().endsWith(fakeNumberOfIds)){
                 printRobot.add(robot);
             }
         }
