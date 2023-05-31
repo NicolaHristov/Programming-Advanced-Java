@@ -1,6 +1,6 @@
 package BirthdayCelebration;
 
-public class Robot implements Birthable,Identifiable{
+public class Robot implements Identifiable{
     private String id;
     private String model;
 
@@ -17,8 +17,4 @@ public class Robot implements Birthable,Identifiable{
         return model;
     }
 
-    @Override
-    public String getBirthDate() {
-        return null;
-    }
 }

@@ -1,6 +1,6 @@
 package BirthdayCelebration;
 
-public class Pet implements Birthable,Identifiable{
+public class Pet implements Birthable{
     private String name;
     private String birthDate;
 
@@ -17,8 +17,4 @@ public class Pet implements Birthable,Identifiable{
         return birthDate;
     }
 
-    @Override
-    public String getId() {
-        return null;
-    }
 }
